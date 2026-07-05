@@ -32,7 +32,8 @@ if IS_WINDOWS:
         "/std:c++17",
         "/EHsc", 
         "/permissive-", 
-        "/Zc:__cplusplus"
+        "/Zc:__cplusplus",
+        "/Zc:preprocessor"
     ]
     nvcc_flags += [
         "-O3",
@@ -42,7 +43,8 @@ if IS_WINDOWS:
         "-Xcompiler=/std:c++17",
         "-Xcompiler=/EHsc", 
         "-Xcompiler=/permissive-", 
-        "-Xcompiler=/Zc:__cplusplus"
+        "-Xcompiler=/Zc:__cplusplus",
+        "-Xcompiler=/Zc:preprocessor",
     ]
 else:
     cxx_flags += [
